@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowSkin - Premium Skincare Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="skincare-loader">
+                <div class="drop drop1"></div>
+                <div class="drop drop2"></div>
+                <div class="drop drop3"></div>
+            </div>
+            <p class="loader-text">Preparing your skincare journey...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>GlowSkin</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#insight" class="nav-link">Insight</a></li>
+                    <li><a href="#ingredients" class="nav-link">Ingredients</a></li>
+                    <li><a href="#routine" class="nav-link">Routine</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <button class="cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></button>
+                    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Discover Your <span class="gradient-text">Perfect Skin</span>
+                </h1>
+                <p class="hero-description">
+                    Premium skincare solutions crafted with natural ingredients for radiant, healthy skin. 
+                    Transform your skincare routine with our scientifically-proven formulations.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">Shop Collection</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('productVideo').style.display='block'">
+                        <i class="fas fa-play"></i>
+                        Watch Story
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card1"><i class="fas fa-leaf"></i><span>100% Natural</span></div>
+                <div class="floating-card card2"><i class="fas fa-award"></i><span>Dermatologist Tested</span></div>
+                <div class="hero-product-showcase"><div class="product-circle"></div></div>
+            </div>
+        </div>
+        <!-- Product Video -->
+        <div id="productVideo" style="display:none; margin-top: 2rem; max-width: 1000px; margin-inline: auto;">
+            <video width="100%" controls>
+                <source src="Assets/homepage.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-description">Discover our bestselling skincare essentials</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image" style="background: none;">
+                        <img src="Assets/stats.png" alt="Product Image" style="width: 100%; border-radius: 12px;">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Glow Skin Set</h3>
+                        <p class="product-description">Special combo with packaging preview</p>
+                        <div class="product-price">
+                            <span class="current-price">₹1,499</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <video width="100%" autoplay muted loop style="border-radius: 12px;">
+                            <source src="Assets/testimonials.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Review Kit</h3>
+                        <p class="product-description">Real testimonials from our happy users</p>
+                        <div class="product-price">
+                            <span class="current-price">₹999</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insight Section -->
+    <section id="insight" class="insight-section" style="padding: 80px 0; background: var(--surface-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Insights & Stats</h2>
+                <p class="section-description">Explore our product impact and performance metrics</p>
+            </div>
+            <img src="Assets/graph.png" alt="Graph Insight" style="width:100%; border-radius:12px; margin-bottom: 40px;">
+            <img src="Assets/stats.png" alt="Product Stats" style="width:100%; border-radius:12px;">
+        </div>
+    </section>
+
+    <!-- Include Ingredients, Routine, Reviews, Contact, Footer etc. as is -->
+    <!-- They remain unchanged from your existing code -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>GlowSkin</span>
+                    </div>
+                    <p>Transforming skincare with natural, science-backed formulations for radiant, healthy skin.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Serums</a></li>
+                        <li><a href="#">Moisturizers</a></li>
+                        <li><a href="#">Sunscreens</a></li>
+                        <li><a href="#">Gift Sets</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Skin Quiz</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GlowSkin. All rights reserved.</p>
+                <p>Made with ❤️ for skincare enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
